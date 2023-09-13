@@ -1,13 +1,12 @@
 import "./App.css";
-import Row from "./Row";
-import requests from "./requests";
+import Banner from "./Banner";
+import MovieList from "./MovieList";
 
 function App() {
   return (
     <div>
-      <h1>Testing</h1>
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row title="Popular" fetchUrl={requests.fetchPopular} />
+      <Banner />
+      <MovieList title = "Top Movies"/>
     </div>
   );
 }

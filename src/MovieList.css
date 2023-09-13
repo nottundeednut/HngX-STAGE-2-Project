@@ -1,0 +1,21 @@
+.grid_posters {
+  /* display: flex;
+    flex-wrap: nowrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 30px;
+}
+
+.grid_poster {
+    transition: transform 300ms;
+}
+
+.grid_poster:hover {
+transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
